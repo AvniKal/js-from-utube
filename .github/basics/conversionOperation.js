@@ -27,6 +27,34 @@ let stringNumber= String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
 
+//avoid these comparision
+console.log(null>0)
+console.log(null==0)
+console.log(null>=0)
+
+console.log(undefined<0)
+console.log(undefined==0)
+console.log(undefined>=0)
+
+console.log("2">1)
+console.log("02">1)
+
+// === (strictly checks values along with data type)
+console.log("2"==2)
+console.log("2"===2)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

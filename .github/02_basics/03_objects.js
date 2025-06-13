@@ -25,5 +25,14 @@ console.log( jsUSer["full name"])
 console.log( jsUSer[mySym])
 
 jsUser.email="avni@chatgpt.com"
-Object.freeze(jsUser)     // ab koi change propagate nhi hoga 
+// Object.freeze(jsUser)     // ab koi change propagate nhi hoga 
 
+jsUser.greeting= function(){
+    console.log("hello js user")
+}
+jsUser.greetingTwo= function(){
+    console.log(`hello js user, ${this.name}`)    // 'this' is used to refer to same object 
+}
+
+console.log(jsUser.greeting())
+console.log(jsUser.greetingTwo())

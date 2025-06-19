@@ -39,6 +39,20 @@ const chai= ()  =>  {      // other way to declare function  // arrow function
 const addTwo=(num1,num2) => {
        return num1+num2;
 }
+console.log(addTwo(3,5))
+
+// const addTwo=(num1,num2) => num1+num2;
+// const addTwo=(num1,num2) => (num1+num2);  // implicit return // curly bractets aur return hara dono and write in one line
+                                                                //   aur function keyword bhi hata do
+const addTwo=(num1,num2) => ({username:"avni"});     // return object
+
+console.log(addTwo(3,5));
+
+// const myArray=[2,5,3,7,8];
+// myArray.forEach(function() {})
+// myArray.forEach(() => {})
+
+
 
 
 

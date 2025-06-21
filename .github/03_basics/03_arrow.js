@@ -36,10 +36,10 @@ const chai= ()  =>  {      // other way to declare function  // arrow function
 }
 
 
-const addTwo=(num1,num2) => {
+const addTwo1=(num1,num2) => {
        return num1+num2;
 }
-console.log(addTwo(3,5))
+console.log(addTwo1(3,5))
 
 // const addTwo=(num1,num2) => num1+num2;
 // const addTwo=(num1,num2) => (num1+num2);  // implicit return // curly bractets aur return hara dono and write in one line

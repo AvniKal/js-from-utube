@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript</title>
+  </head>
+
+ <body>
+    <h1>chai aur code</h1>
+     <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>  
+<script>
+    const sayAvni=function(){
+        console.log("avni");
+    }
+    const ChangeText= function(){
+        document.querySelector('h1').innerHTML="best js series"
+    }
+    setTimeout(sayAvni,2000)
+    const changeMe=setTimeout(ChangeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(e){
+        clearTimeout(changeMe)
+        console.log("stopped");
+    })
+
+
+    const intervalId=setInterval(function(str){
+        console.log(str,Date.now())
+    },1000,"hii")
+
+    clearInterval(intervalId);
+</script>
+
+ </html>
+
